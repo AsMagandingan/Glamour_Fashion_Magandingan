@@ -8,7 +8,16 @@
 </head>
 <body>
 
- <!-- Header -->
+ <!-- Toggle Menu Script -->
+  <script>
+    // Toggle Menu Functionality
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+
+  <!-- Header -->
   <header>
     <nav>
       <div class="burger" onclick="toggleMenu()">
@@ -23,7 +32,6 @@
       </ul>
     </nav>
   </header>
-
   <!-- Marquee Announcement -->
 <div class="marquee">
   <p>🎉 New Arrivals Now In! Don't Miss Our Biggest Sale — Up to 50% Off! 🎉</p>
@@ -56,12 +64,6 @@ I make you satisfied with happiness in very purchase you made here! </p>
       </div>
        </aside>
   </section>
-  <script>
-    // Toggle Menu Functionality
-    function toggleMenu() {
-      const navLinks = document.getElementById('navLinks');
-      navLinks.classList.toggle('active');
-    }
 
 </body>
 </html>
