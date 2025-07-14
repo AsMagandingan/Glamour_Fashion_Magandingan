@@ -79,13 +79,14 @@ header {
 .burger {
   display: none;
   cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .burger .line {
   width: 25px;
   height: 3px;
   background-color: white;
-  margin: 6px 0;
 }
 
 @media (max-width: 768px) {
@@ -105,9 +106,14 @@ header {
   }
 
   .burger {
-    display: block;
+    display: flex;
   }
 }
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 /* Marquee Announcement */
 .marquee {
   background-color: #B59410; /* Gold background */
